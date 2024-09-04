@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/chemicals/AmountOfChemical",
+  "_type": "/chemicals/AmountOfChemical",
   "required": [
     "chemicalProduct"
   ],
@@ -7,15 +7,15 @@
     "amount": {
       "_instruction": "When used in a mixture, enter the amount of the substance within the mixture (e.g., as concentration or as ratio). When used in its pure state, enter the used amount of the substance.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
+        "/core/QuantitativeValue"
       ]
     },
     "chemicalProduct": {
       "_instruction": "Add the chemical product that was used.",
       "_linkedTypes": [        
-        "https://openminds.ebrains.eu/chemicals/ChemicalMixture",
-        "https://openminds.ebrains.eu/chemicals/ChemicalSubstance",
-        "https://openminds.ebrains.eu/controlledTerms/MolecularEntity"
+        "/chemicals/ChemicalMixture",
+        "/chemicals/ChemicalSubstance",
+        "/controlledTerms/MolecularEntity"
       ]
     }
   }

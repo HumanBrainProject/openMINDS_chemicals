@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/chemicals/ChemicalSubstance",
+  "_type": "/chemicals/ChemicalSubstance",
   "required": [
     "molecularEntity"
   ],
@@ -15,20 +15,20 @@
     "molecularEntity": {
       "_instruction": "Add the molecular entity that makes up this chemical substance.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/MolecularEntity"
+        "/controlledTerms/MolecularEntity"
       ]
     },
     "productSource": {
       "_instruction": "Add the source of this chemical substance.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/chemicals/ProductSource"
+        "/chemicals/ProductSource"
       ]
     },
     "purity": {
       "_instruction": "Enter the purity of this chemical substance.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue",
-        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+        "/core/QuantitativeValue",
+        "/core/QuantitativeValueRange"
       ]
     }
   }
