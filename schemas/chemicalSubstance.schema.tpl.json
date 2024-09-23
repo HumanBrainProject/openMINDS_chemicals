@@ -1,5 +1,5 @@
 {
-  "_type": "ChemicalSubstance",
+  "_type": "chemicals:ChemicalSubstance",
   "required": [
     "molecularEntity"
   ],
@@ -15,20 +15,20 @@
     "molecularEntity": {
       "_instruction": "Add the molecular entity that makes up this chemical substance.",
       "_linkedTypes": [
-        "MolecularEntity"
+        "controlledTerms:MolecularEntity"
       ]
     },
     "productSource": {
       "_instruction": "Add the source of this chemical substance.",
       "_linkedTypes": [
-        "ProductSource"
+        "chemicals:ProductSource"
       ]
     },
     "purity": {
       "_instruction": "Enter the purity of this chemical substance.",
       "_embeddedTypes": [
-        "QuantitativeValue",
-        "QuantitativeValueRange"
+        "core:QuantitativeValue",
+        "core:QuantitativeValueRange"
       ]
     }
   }

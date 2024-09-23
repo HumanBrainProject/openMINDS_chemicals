@@ -1,5 +1,5 @@
 {
-  "_type": "AmountOfChemical",
+  "_type": "chemicals:AmountOfChemical",
   "required": [
     "chemicalProduct"
   ],
@@ -7,15 +7,15 @@
     "amount": {
       "_instruction": "When used in a mixture, enter the amount of the substance within the mixture (e.g., as concentration or as ratio). When used in its pure state, enter the used amount of the substance.",
       "_embeddedTypes": [
-        "QuantitativeValue"
+        "core:QuantitativeValue"
       ]
     },
     "chemicalProduct": {
       "_instruction": "Add the chemical product that was used.",
       "_linkedTypes": [        
-        "ChemicalMixture",
-        "ChemicalSubstance",
-        "MolecularEntity"
+        "chemicals:ChemicalMixture",
+        "chemicals:ChemicalSubstance",
+        "controlledTerms:MolecularEntity"
       ]
     }
   }

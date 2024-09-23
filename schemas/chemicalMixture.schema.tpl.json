@@ -1,5 +1,5 @@
 {
-  "_type": "ChemicalMixture",
+  "_type": "chemicals:ChemicalMixture",
   "required": [
     "hasPart",
     "type"
@@ -15,7 +15,7 @@
       "uniqueItems": true,
       "_instruction": "Enter all components, including other mixtures, that are part of this chemical mixture.",
       "_embeddedTypes": [
-        "AmountOfChemical"
+        "chemicals:AmountOfChemical"
       ]
     },
     "name": {
@@ -25,13 +25,13 @@
     "productSource": {
       "_instruction": "Add the source of this chemical mixture.",
       "_linkedTypes": [
-        "ProductSource"
+        "chemicals:ProductSource"
       ]
     },
     "type": {
       "_instruction": "Add the type of this mixture.",
       "_linkedTypes": [
-        "ChemicalMixtureType"
+        "controlledTerms:ChemicalMixtureType"
       ]
     }
   }

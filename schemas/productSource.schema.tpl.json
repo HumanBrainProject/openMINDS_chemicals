@@ -1,5 +1,5 @@
 {
-  "_type": "ProductSource",
+  "_type": "chemicals:ProductSource",
   "required": [
     "productName",
     "provider"
@@ -8,7 +8,7 @@
     "digitalIdentifier": {
       "_instruction": "Add the globally unique and persistent digital identifier of this product.",
       "_linkedTypes": [
-        "RRID"
+        "core:RRID"
       ]
     },
     "identifier": {
@@ -28,8 +28,8 @@
     "purity": {
       "_instruction": "Enter the purity of the product as stated by the 'provider'.",
       "_embeddedTypes": [
-        "QuantitativeValue",
-        "QuantitativeValueRange"
+        "core:QuantitativeValue",
+        "core:QuantitativeValueRange"
       ]
     }
   }
